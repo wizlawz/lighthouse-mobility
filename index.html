@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lighthouse Mobility — The First Ride</title>
+<style>
+  body { background:#0b1020; color:#e8e4d8; font-family: Georgia, 'Times New Roman', serif; margin:0; padding:2rem 1rem 4rem; }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { color:#d4af37; font-size:2rem; margin-bottom:.2rem; }
+  h2 { color:#d4af37; font-size:1.25rem; margin-top:2.2rem; border-bottom:1px solid #2a3350; padding-bottom:.3rem; }
+  .status { color:#9fb4ff; letter-spacing:.08em; font-size:.9rem; text-transform:uppercase; }
+  .prov { background:#121a33; border-left:3px solid #d4af37; padding:.8rem 1rem; margin:1.2rem 0; font-size:.98rem; }
+  li { margin:.35rem 0; }
+  .small { color:#a9a294; font-size:.88rem; }
+  a { color:#9fb4ff; }
+  .rule { font-size:1.08rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Lighthouse Mobility</h1>
+<p class="status">The First Ride — a standing offer, looking for its first parts sponsor</p>
+
+<div class="prov">
+Food programs deliver boxes to a man's door. Nobody gives him the means to reach the food himself. <strong>Lighthouse Mobility exists to close that gap: a free engine cycle, built for a disabled rider, so distance stops deciding what he eats.</strong>
+</div>
+
+<h2>The problem</h2>
+<p>A disabled man with no transportation walks everywhere. The food shelf is miles. The store is miles. Every errand is an expedition planned around his body, the weather, and what he can carry. When a volunteer route fails or a delivery does not come, there is no second way — he cannot go himself. Distance is the whole problem, and everything else is a symptom of it.</p>
+
+<h2>The machine</h2>
+<p>A 66cc engine cycle — a bicycle with a small gasoline engine, built, tuned, and diagnosed by Lighthouse, the shop that exists for the 66/80cc two-stroke machines nobody else will touch. Eighty-five miles to a gallon. Town speed. A gallon of fuel is weeks of food runs.</p>
+<p>What this machine does for a man with nothing is on record: <a href="https://youtu.be/OoYg963qNVk">a rider who was living out of a coffee shop got one, and it ended his walking everywhere</a>.</p>
+
+<h2>What one bike changes</h2>
+<ul>
+<li><strong>Distance, alleviated</strong> — the shelf, the store, and the pharmacy come within reach.</li>
+<li><strong>Food survival, made efficient</strong> — he goes when the shelf is open and carries what he chose, not what was dropped off.</li>
+<li><strong>Independence</strong> — no proxy, no delivery schedule, no asking.</li>
+<li><strong>Zero reliance on volunteers for food</strong> — the lifeline becomes a choice, not a necessity.</li>
+</ul>
+
+<h2>Built for the rider</h2>
+<ul>
+<li><strong>The start comes first.</strong> A disabled rider may not be able to pull-start an engine. Every build in this program answers the start before anything else — a machine he cannot start is not a gift.</li>
+<li><strong>The legal class is checked</strong> for Minnesota roads before handoff. The gift does not arrive with a ticket in it.</li>
+<li><strong>The builder stands behind it.</strong> Diagnosis and repair stay with Lighthouse for the life of the machine.</li>
+</ul>
+
+<h2>The shape of the program</h2>
+<p class="rule">One bike. One recipient. Documented end to end — the build, the handoff, the first food run. The record is public. The recipient's name is his own, and stays his unless he says otherwise.</p>
+<p>When the first ride stands finished and verified, the program takes the second.</p>
+
+<h2>The ask</h2>
+<p>The first build is <strong>not yet funded and not yet built</strong> — that is stated plainly, because nothing on a Lighthouse page claims what has not run. What is missing is the parts money for one machine. A sponsor covers the parts; the record shows what was bought and what it became.</p>
+<ul>
+<li><strong>To sponsor or supply parts:</strong> write to Lighthouse at <a href="mailto:seed6@muse.ai">seed6@muse.ai</a> — every message is read and answered — or open an issue on this page's repository.</li>
+<li><strong>To give toward it:</strong> the Lighthouse door on Chime, <a href="https://app.chime.com/link/qr?u=ZX376">app.chime.com/link/qr?u=ZX376</a> — the giver chooses the amount. There is no price.</li>
+</ul>
+
+<p class="small">Published by Lighthouse / Wizlawz. Status of every claim on this page: the mission stands; the first build awaits its sponsor. When it is funded, built, and ridden, this page will say so — with the record attached.</p>
+<p class="small">Visits: <span id="visits">—</span></p>
+</main>
+<script>
+fetch('https://abacus.jasoncameron.dev/hit/wizlawz-lighthouse-mobility/visits')
+  .then(r => r.json()).then(d => { document.getElementById('visits').textContent = d.value; })
+  .catch(() => { document.getElementById('visits').textContent = 'counter unreachable'; });
+</script>
+</body>
+</html>
